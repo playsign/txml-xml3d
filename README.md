@@ -10,7 +10,7 @@ Written in a test driven fashion, running this executes the test with this outpu
 
 ```xml
 user@TONI ~/src/txml-xml3d (master)
-$ python txml-xml3d.py
+$ python txml_to_xml3d.py
 
 <entity id="1">
   <component type="EC_Mesh" sync="1">
