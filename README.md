@@ -36,3 +36,5 @@ $ python txml-xml3d.py
   <door locked="false" opened="true" />
 </group>
 ```
+
+There first is the test TXML string, then after ===> the automatically converted XML3d snippet and last separated with ---- the hand crafted xml3d which the automatic conversion result was succesfully compared against.
