@@ -29,12 +29,9 @@ door_txml = """
 door_xml3d = """
 <group>
   <mesh src="slidingdoor.mesh" /> 
-  <door locked="false" opened="true" />
+  <door opened="true" locked="false" />
 </group>
 """
-#<door opened="true" locked="false" />
-#was lazy and hacked the order - should use some xmldiff
-#.. switch the attr order when do, to match the txml one - clearer to read
 
 def txml_to_xml3d(txml_doc):
     root = ET.fromstring(txml_doc)
