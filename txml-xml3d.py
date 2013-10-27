@@ -74,6 +74,10 @@ def txml_to_xml3d(txml_doc):
                 if xml3d_type == "mesh":
                     xml3d_elem.attrib['src'] = txmlutil.attrval(comp, 'Mesh ref')
 
+            #probably what we'd need is preserving all the attrs for all comps,
+            #perhaps have a mapping dict for known xml3d ones and
+            #then pass unknown ones through with whitespace -> '_' conversion?
+
     return xml3d_group #xml3d_tree
 
 def test_txml_to_xml3d(txml_doc, ref_xml3d_doc):
