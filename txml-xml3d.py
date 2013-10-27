@@ -2,7 +2,7 @@ from xml.etree.ElementTree import ElementTree
 import xml.etree.ElementTree as ET
 
 import txmlutil
-import etcomp
+import etcompare
 
 #copy-pasted & cleaned from:
 #https://github.com/realXtend/naali/blob/tundra/bin/scenes/Door/door.txml
@@ -92,7 +92,7 @@ def test_txml_to_xml3d(txml_doc, ref_xml3d_doc):
     print ET.tostring(xml3d)
     print " ----- "
     print ET.tostring(ref_xml3d_root)
-    assert etcomp.el_equal(xml3d, ref_xml3d_root)
+    assert etcompare.el_equal(xml3d, ref_xml3d_root)
 
 def test():
     test_txml_to_xml3d(door_txml, door_xml3d)
